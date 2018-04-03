@@ -49,16 +49,16 @@ Follow these instructions to setup your environment
    * Clone the repository
       ```
       cd /development/
-       git clone git@github.com:ybhalerao/daizika.git
+       git clone git@github.com:daizika/edgar.git
       ```
-4. Install docker from `/development/daizika/scripts/docker_setup.sh`
+4. Install docker from `/development/edgar/scripts/docker_setup.sh`
 5. Build docker image using the following commands
     ```
-    sudo chown -R 1000 /development/daizika
-    sudo chmod -R 777 /development/daizika/
-    cd /development/daizika/docker
+    sudo chown -R 1000 /development/edgar
+    sudo chmod -R 777 /development/edgar/
+    cd /development/edgar/docker
     docker build -t daizika.com/tensorflow:1.0 .
-    docker run -d -p 8888:8888 -u root -e GRANT_SUDO=yes -v /development/daizika:/development <image_id> start-notebook.sh
+    docker run -d -p 8888:8888 -u root -e GRANT_SUDO=yes -v /development/edgar:/development <image_id> start-notebook.sh
     export TS_CONTAINER=<CONTAINER_ID>
     ```
 6. Connect to the jupyter notebook server `http://<DOCKER-IP>:8888/?token=<TOKEN_FROM_LOGS>`
