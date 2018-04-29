@@ -28,3 +28,4 @@ RUN pip install wget
 RUN pip install html5lib
 RUN pip install beautifulsoup4
 RUN pip install pycurl
+RUN pip install PyMySQL
