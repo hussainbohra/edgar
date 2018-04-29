@@ -17,6 +17,7 @@ class SECDataFolder:
         self.extract_metadata_folder = '{}/metadata'.format(self.extract_base_folder)
         self.extract_cik_folder = '{}/cik'.format(self.extract_base_folder)
         self.extract_json_folder = '{}/json'.format(self.extract_base_folder)
+        self.search_base_folder = '{}/search'.format(self.edgar_folder)
 
 class CIKDownloader():
     def __init__(self):

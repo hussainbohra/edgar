@@ -1,7 +1,7 @@
 from edgar import SECHelper, SECEdgarParser
 
-index_year = 2012
-index_qtr = 1
+index_year = 2010
+index_qtr = 4
 print('{}/{}'.format(index_year, index_qtr))
 formDownloader = SECHelper.FormDownloader()
 formDownloader.download_qtr_forms(index_year=index_year, index_qtr=index_qtr, forms=['10-K'])
